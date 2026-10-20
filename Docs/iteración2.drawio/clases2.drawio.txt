@@ -1,0 +1,123 @@
+
+<mxfile host="app.diagrams.net">
+  <diagram id="msgf-clases-v5" name="Diagrama de clases MSGF">
+    <mxGraphModel dx="1414" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="class_activo" parent="1" value="Activo" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#DCEAF7;strokeColor=#52799B;rounded=1;" vertex="1">
+          <mxGeometry x="490" y="45" width="200" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_activo" parent="class_activo" value="- id: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=5;spacingRight=5;overflow=hidden;rotatable=0;html=1;fontColor=#333333;" vertex="1">
+          <mxGeometry x="0" y="30" width="200" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="line_activo" parent="class_activo" value="" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#CCCCCC;" vertex="1">
+          <mxGeometry x="0" y="60" width="200" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="meth_activo" parent="class_activo" value="+ crear(): void&#xa;+ read(): Activo&#xa;+ update(): boolean&#xa;+ delete(): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=5;spacingRight=5;html=1;fontColor=#333333;spacingTop=5;" vertex="1">
+          <mxGeometry x="0" y="70" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="class_hipoteca" parent="1" value="Hipoteca" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;collapsible=0;html=1;fillColor=#E7EFF8;strokeColor=#52799B;rounded=1;" vertex="1">
+          <mxGeometry x="60" y="300" width="230" height="190" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_hipoteca" parent="class_hipoteca" value="- pareja: String&#xa;- valor_inicial: double&#xa;- fecha_otorgada: Date&#xa;- ingresos_sem: double&#xa;- impuesto: double&#xa;- seguro: double&#xa;- fecha_imp: Date&#xa;- fecha_seg: Date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=7;spacingRight=5;html=1;fontColor=#333333;spacingTop=5;" vertex="1">
+          <mxGeometry x="0" y="32" width="230" height="155" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="class_inversion" parent="1" value="Inversion" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;collapsible=0;html=1;fillColor=#E7EFF8;strokeColor=#52799B;rounded=1;" vertex="1">
+          <mxGeometry x="340" y="300" width="200" height="135" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_inversion" parent="class_inversion" value="- entidad: String&#xa;- valor: double&#xa;- plazos: int&#xa;- interes: float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=7;spacingRight=5;html=1;fontColor=#333333;spacingTop=5;" vertex="1">
+          <mxGeometry x="0" y="32" width="200" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="class_beca" parent="1" value="BecaCredito" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;collapsible=0;html=1;fillColor=#E7EFF8;strokeColor=#52799B;rounded=1;" vertex="1">
+          <mxGeometry x="590" y="300" width="230" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_beca" parent="class_beca" value="- estudiante: String&#xa;- monto_semestral: double&#xa;- estado: String&#xa;- fecha_otorgamiento: Date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=7;spacingRight=5;html=1;fontColor=#333333;spacingTop=5;" vertex="1">
+          <mxGeometry x="0" y="32" width="230" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="line_beca" parent="class_beca" value="" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#CCCCCC;" vertex="1">
+          <mxGeometry x="0" y="112" width="230" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="meth_beca" parent="class_beca" value="+ otorgarBeca(): boolean&#xa;+ evaluarCondonacion(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=7;spacingRight=5;html=1;fontColor=#333333;spacingTop=5;" vertex="1">
+          <mxGeometry x="0" y="122" width="230" height="55" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="class_aporte" parent="1" value="AporteAnual" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;collapsible=0;html=1;fillColor=#DCEAF7;strokeColor=#52799B;rounded=1;" vertex="1">
+          <mxGeometry x="870" y="300" width="230" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_aporte" parent="class_aporte" value="- anio: int&#xa;- monto_total: double&#xa;- monto_disponible: double&#xa;- entidad_donante: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=7;spacingRight=5;html=1;fontColor=#333333;spacingTop=5;" vertex="1">
+          <mxGeometry x="0" y="32" width="230" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="line_aporte" parent="class_aporte" value="" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#CCCCCC;" vertex="1">
+          <mxGeometry x="0" y="112" width="230" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="meth_aporte" parent="class_aporte" value="+ registrarAporte(): void&#xa;+ descontarMonto(m: double)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=7;spacingRight=5;html=1;fontColor=#333333;spacingTop=5;" vertex="1">
+          <mxGeometry x="0" y="122" width="230" height="55" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="class_registro" parent="1" value="RegistroSemestral" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;collapsible=0;html=1;fillColor=#E2F0E5;strokeColor=#5B8B68;rounded=1;" vertex="1">
+          <mxGeometry x="590" y="555" width="230" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_registro" parent="class_registro" value="- semestre: String&#xa;- promedio_notas: float&#xa;- costo_matricula: double&#xa;- estado_pago: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=7;spacingRight=5;html=1;fontColor=#333333;spacingTop=5;" vertex="1">
+          <mxGeometry x="0" y="32" width="230" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="line_registro" parent="class_registro" value="" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#CCCCCC;" vertex="1">
+          <mxGeometry x="0" y="112" width="230" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="meth_registro" parent="class_registro" value="+ presentarNotas(): void&#xa;+ procesarCondonacion(): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=7;spacingRight=5;html=1;fontColor=#333333;spacingTop=5;" vertex="1">
+          <mxGeometry x="0" y="122" width="230" height="55" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="herencia_hipoteca" edge="1" parent="1" source="class_hipoteca" target="class_activo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=block;endFill=0;strokeWidth=1.6;strokeColor=#657786;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="175" y="225"/>
+              <mxPoint x="590" y="225"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="herencia_inversion" edge="1" parent="1" source="class_inversion" target="class_activo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=block;endFill=0;strokeWidth=1.6;strokeColor=#657786;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="225"/>
+              <mxPoint x="590" y="225"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="herencia_beca" edge="1" parent="1" source="class_beca" target="class_activo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=block;endFill=0;strokeWidth=1.6;strokeColor=#657786;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="705" y="225"/>
+              <mxPoint x="590" y="225"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="assoc_beca_aporte" edge="1" parent="1" source="class_beca" target="class_aporte" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=none;strokeWidth=1.6;strokeColor=#657786;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="mult_beca_aporte1" connectable="0" parent="assoc_beca_aporte" value="1..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontColor=#333333;" vertex="1">
+          <mxGeometry relative="1" x="-0.8" y="15" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="mult_beca_aporte2" connectable="0" parent="assoc_beca_aporte" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontColor=#333333;" vertex="1">
+          <mxGeometry relative="1" x="0.8" y="15" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="comp_beca_registro" edge="1" parent="1" source="class_registro" target="class_beca" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;endArrow=diamond;endFill=1;strokeWidth=1.6;strokeColor=#657786;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="mult_comp1" connectable="0" parent="comp_beca_registro" value="1..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontColor=#333333;" vertex="1">
+          <mxGeometry relative="1" x="-0.8" y="15" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+        <mxCell id="mult_comp2" connectable="0" parent="comp_beca_registro" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontColor=#333333;" vertex="1">
+          <mxGeometry relative="1" x="0.8" y="15" as="geometry"><mxPoint as="offset"/></mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

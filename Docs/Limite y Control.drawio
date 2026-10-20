@@ -1,0 +1,173 @@
+<mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="950" math="0" shadow="0">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+
+    <!-- GRUPO DE CLASES LIMITE -->
+    <mxCell id="swim_limite" parent="1"
+      style="swimlane;whiteSpace=wrap;html=1;fillColor=#E8F1FB;swimlaneFillColor=#FFFFFF;strokeColor=#4776A8;fontStyle=1;startSize=40;fontSize=15;rounded=1;arcSize=8;"
+      value="CLASES LIMITE (BOUNDARY)" vertex="1">
+      <mxGeometry x="60" y="70" width="330" height="700" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="bound_1" parent="swim_limite"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7FAFF;strokeColor=#4776A8;fontSize=12;fontColor=#20354A;arcSize=8;"
+      value="PantallaMenuPrincipal" vertex="1">
+      <mxGeometry x="25" y="55" width="280" height="55" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="bound_2" parent="swim_limite"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7FAFF;strokeColor=#4776A8;fontSize=12;fontColor=#20354A;arcSize=8;"
+      value="InterfazCalcularFondo" vertex="1">
+      <mxGeometry x="25" y="130" width="280" height="55" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="bound_3" parent="swim_limite"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7FAFF;strokeColor=#4776A8;fontSize=12;fontColor=#20354A;arcSize=8;"
+      value="InterfazGestionHipoteca" vertex="1">
+      <mxGeometry x="25" y="205" width="280" height="55" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="bound_4" parent="swim_limite"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7FAFF;strokeColor=#4776A8;fontSize=12;fontColor=#20354A;arcSize=8;"
+      value="InterfazGestionInversion" vertex="1">
+      <mxGeometry x="25" y="280" width="280" height="55" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="bound_5" parent="swim_limite"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7FAFF;strokeColor=#4776A8;fontSize=12;fontColor=#20354A;arcSize=8;"
+      value="InterfazImpresionReporte" vertex="1">
+      <mxGeometry x="25" y="355" width="280" height="55" as="geometry"/>
+    </mxCell>
+
+    <!-- CLASES NUEVAS -->
+    <mxCell id="bound_6" parent="swim_limite"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F2E8;strokeColor=#27805B;fontSize=12;fontColor=#174D36;arcSize=8;"
+      value="InterfazAporteAnual" vertex="1">
+      <mxGeometry x="25" y="430" width="280" height="55" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="bound_7" parent="swim_limite"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F2E8;strokeColor=#27805B;fontSize=12;fontColor=#174D36;arcSize=8;"
+      value="InterfazGestionBeca" vertex="1">
+      <mxGeometry x="25" y="505" width="280" height="55" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="bound_8" parent="swim_limite"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F2E8;strokeColor=#27805B;fontSize=12;fontColor=#174D36;arcSize=8;"
+      value="InterfazEvaluacionSemestral" vertex="1">
+      <mxGeometry x="25" y="580" width="280" height="55" as="geometry"/>
+    </mxCell>
+
+    <!-- GRUPO DE CLASES DE CONTROL -->
+    <mxCell id="swim_control" parent="1"
+      style="swimlane;whiteSpace=wrap;html=1;fillColor=#FFF0E2;swimlaneFillColor=#FFFFFF;strokeColor=#C47736;fontStyle=1;startSize=40;fontSize=15;rounded=1;arcSize=8;"
+      value="CLASES DE CONTROL (CONTROL)" vertex="1">
+      <mxGeometry x="520" y="70" width="330" height="700" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="ctrl_1" parent="swim_control"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9F2;strokeColor=#C47736;fontSize=12;fontColor=#613B1D;arcSize=8;"
+      value="GestorLoopSistema" vertex="1">
+      <mxGeometry x="25" y="55" width="280" height="55" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="ctrl_2" parent="swim_control"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9F2;strokeColor=#C47736;fontSize=12;fontColor=#613B1D;arcSize=8;"
+      value="ControladorCalculoFondo" vertex="1">
+      <mxGeometry x="25" y="130" width="280" height="55" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="ctrl_3" parent="swim_control"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9F2;strokeColor=#C47736;fontSize=12;fontColor=#613B1D;arcSize=8;"
+      value="ControladorGestionHipoteca" vertex="1">
+      <mxGeometry x="25" y="205" width="280" height="55" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="ctrl_4" parent="swim_control"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9F2;strokeColor=#C47736;fontSize=12;fontColor=#613B1D;arcSize=8;"
+      value="ControladorGestionInversion" vertex="1">
+      <mxGeometry x="25" y="280" width="280" height="55" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="ctrl_5" parent="swim_control"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9F2;strokeColor=#C47736;fontSize=12;fontColor=#613B1D;arcSize=8;"
+      value="ControladorGenerarReporte" vertex="1">
+      <mxGeometry x="25" y="355" width="280" height="55" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="ctrl_6" parent="swim_control"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F2E8;strokeColor=#27805B;fontSize=12;fontColor=#174D36;arcSize=8;"
+      value="ControladorAporteAnual" vertex="1">
+      <mxGeometry x="25" y="430" width="280" height="55" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="ctrl_7" parent="swim_control"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F2E8;strokeColor=#27805B;fontSize=12;fontColor=#174D36;arcSize=8;"
+      value="ControladorGestionBeca" vertex="1">
+      <mxGeometry x="25" y="505" width="280" height="55" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="ctrl_8" parent="swim_control"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F2E8;strokeColor=#27805B;fontSize=12;fontColor=#174D36;arcSize=8;"
+      value="ControladorEvaluacionSemestral" vertex="1">
+      <mxGeometry x="25" y="580" width="280" height="55" as="geometry"/>
+    </mxCell>
+
+    <!-- DEPENDENCIAS ENTRE CONTROL Y LIMITE -->
+    <mxCell id="dep_1" edge="1" parent="1" source="ctrl_1" target="bound_1"
+      style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#64748B;strokeWidth=1.5;">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="dep_2" edge="1" parent="1" source="ctrl_2" target="bound_2"
+      style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#64748B;strokeWidth=1.5;">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="dep_3" edge="1" parent="1" source="ctrl_3" target="bound_3"
+      style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#64748B;strokeWidth=1.5;">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="dep_4" edge="1" parent="1" source="ctrl_4" target="bound_4"
+      style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#64748B;strokeWidth=1.5;">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="dep_5" edge="1" parent="1" source="ctrl_5" target="bound_5"
+      style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#64748B;strokeWidth=1.5;">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="dep_6" edge="1" parent="1" source="ctrl_6" target="bound_6"
+      style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#27805B;strokeWidth=1.5;">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="dep_7" edge="1" parent="1" source="ctrl_7" target="bound_7"
+      style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#27805B;strokeWidth=1.5;">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="dep_8" edge="1" parent="1" source="ctrl_8" target="bound_8"
+      style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#27805B;strokeWidth=1.5;">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- LEYENDA -->
+    <mxCell id="legend_bg" parent="1"
+      style="swimlane;whiteSpace=wrap;html=1;fillColor=#F1F5F9;strokeColor=#94A3B8;fontStyle=1;startSize=30;fontSize=13;rounded=1;"
+      value="LEYENDA" vertex="1">
+      <mxGeometry x="280" y="800" width="330" height="95" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="legend_new" parent="legend_bg"
+      style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F2E8;strokeColor=#27805B;fontSize=12;fontColor=#174D36;"
+      value="Clases nuevas (Requerimiento 5)"
+      vertex="1">
+      <mxGeometry x="15" y="40" width="300" height="35" as="geometry"/>
+    </mxCell>
+
+  </root>
+</mxGraphModel>
